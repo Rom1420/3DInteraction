@@ -1,0 +1,25 @@
+# On versionne le mirror Unity dans unity_src/
+
+unity_src/[Ll]ibrary/
+unity_src/[Tt]emp/
+unity_src/[Oo]bj/
+unity_src/[Bb]uild/
+unity_src/[Bb]uilds/
+unity_src/[Ll]ogs/
+unity_src/[Uu]ser[Ss]ettings/
+
+unity_src/.vs/
+unity_src/.idea/
+unity_src/.vscode/
+unity_src/.git/
+unity_src/.gitignore
+unity_src/.plastic
+
+unity_src/**/.DS_Store
+unity_src/.DS_Store
+
+# Global IDE junk
+*.user
+*.suo
+*.tmp
+*.log
