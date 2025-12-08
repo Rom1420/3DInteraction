@@ -3,7 +3,7 @@
 $UnityProjectPath = "C:\Users\abbon\Documents\Unity\3DInteraction\3DInteractionRepo"
 
 # Branche git cible
-$GitBranch = "main"
+$GitBranch = "master"
 # ==============
 
 Write-Host "=== Sync Unity Version Control -> Git repo (AUTO) ===" -ForegroundColor Cyan
