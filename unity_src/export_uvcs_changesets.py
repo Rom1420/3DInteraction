@@ -67,6 +67,20 @@ def main():
     last_id = get_last_id()
     items = fetch_changesets(last_id)
 
+    # Merge with existing history to keep full archive.
+    existing_items = []
+    if OUT_FILE.exists():
+        try:
+            existing_payload = json.loads(OUT_FILE.read_text(encoding="utf-8"))
+            existing_items = existing_payload.get("changesets", []) or []
+        except Exception:
+            existing_items = []
+
+    merged_by_id = {c.get("id"): c for c in existing_items if isinstance(c, dict) and "id" in c}
+    for c in items:
+        merged_by_id[c["id"]] = c
+    merged_items = sorted(merged_by_id.values(), key=lambda c: c["id"])
+
     if items:
         new_last_id = max(i["id"] for i in items)
         save_last_id(new_last_id)
@@ -75,8 +89,8 @@ def main():
     payload = {
         "generated_at": datetime.utcnow().isoformat() + "Z",
         "from_changeset_id_exclusive": last_id,
-        "count": len(items),
-        "changesets": items,
+        "count": len(merged_items),
+        "changesets": merged_items,
     }
 
     OUT_FILE.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
