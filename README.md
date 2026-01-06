@@ -1,9 +1,10 @@
 # Historique des commits UVCS
 
-Derniere generation: 2026-01-06T14:27:09+00:00
+Derniere generation: 2026-01-06T14:55:13+00:00
 
 | ID | Date | Branch | Auteur | Commentaire |
 | --- | --- | --- | --- | --- |
+| 1758 | 06/01/2026 15:28:11 | /main | Semard Maxime <dragostgames@gmail.com> | Finalisation Lance-Pierre + Ajout tour de canette - manque plus qu'a l'intégrer dans la scène finale. |
 | 1757 | 06/01/2026 15:10:24 | /main | Abbonato Romain <abbonato12@icloud.com> | test |
 | 1756 | 06/01/2026 14:38:44 | /main | Abbonato Romain <abbonato12@icloud.com> | rename |
 | 1750 | 06/01/2026 14:23:25 | /main | Abbonato Romain <abbonato12@icloud.com> | merge |
