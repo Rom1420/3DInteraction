@@ -6,6 +6,7 @@ from pathlib import Path
 
 STATE_FILE = Path(".uvcs_last_changeset.txt")
 OUT_FILE = Path("changesets.json")
+CM_ENCODING = "utf-8"
 
 # ⚙️ Optionnel : si tu veux forcer un repo précis, mets un selector du style:
 # REPO_SELECTOR = "repo@server:8087" (on-prem) ou "repo@cloud"
@@ -13,7 +14,15 @@ OUT_FILE = Path("changesets.json")
 REPO_SELECTOR = ""  # ex: "myrepo@cloud"
 
 def run(cmd: list[str]) -> str:
-    p = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, encoding="utf-8")
+    # Use replace to avoid hard failures on unexpected output bytes.
+    p = subprocess.run(
+        cmd,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
     if p.returncode != 0:
         raise RuntimeError(f"Command failed:\n{' '.join(cmd)}\n\nSTDERR:\n{p.stderr.strip()}")
     return p.stdout
@@ -38,7 +47,7 @@ def fetch_changesets(last_id: int) -> list[dict]:
     fmt = "{id}|{date}|{owner}|{branch}|{comment}"
 
     # Older cm expects --format=<str> (no space), otherwise it parses it as query.
-    cmd = ["cm", "find", "changeset", where, f"--format={fmt}", "--nototal"]
+    cmd = ["cm", "find", "changeset", where, f"--format={fmt}", "--nototal", f"--encoding={CM_ENCODING}"]
 
     # Si tu veux forcer un repo, tu peux ajouter un paramètre de scope si ton cm le supporte,
     # sinon fais le dans le bon workspace / bon server login.
