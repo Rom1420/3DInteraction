@@ -1,0 +1,154 @@
+{
+  "generated_at": "2026-01-06T13:55:27.039516Z",
+  "from_changeset_id_exclusive": 0,
+  "count": 21,
+  "changesets": [
+    {
+      "id": 5,
+      "date": "26/11/2025 15:58:46",
+      "author": "abbonato12@icloud.com",
+      "branch": "/main",
+      "comment": ""
+    },
+    {
+      "id": 12,
+      "date": "26/11/2025 15:59:00",
+      "author": "abbonato12@icloud.com",
+      "branch": "/main",
+      "comment": "Add packages and project settings to Unity Version Control."
+    },
+    {
+      "id": 15,
+      "date": "26/11/2025 15:59:36",
+      "author": "abbonato12@icloud.com",
+      "branch": "/main",
+      "comment": "up"
+    },
+    {
+      "id": 344,
+      "date": "02/12/2025 14:22:58",
+      "author": "abbonato12@icloud.com",
+      "branch": "/main",
+      "comment": ""
+    },
+    {
+      "id": 345,
+      "date": "02/12/2025 14:23:18",
+      "author": "abbonato12@icloud.com",
+      "branch": "/main",
+      "comment": "up"
+    },
+    {
+      "id": 754,
+      "date": "09/12/2025 14:08:48",
+      "author": "abbonato12@icloud.com",
+      "branch": "/main",
+      "comment": "upupup"
+    },
+    {
+      "id": 757,
+      "date": "09/12/2025 15:49:31",
+      "author": "abbonato12@icloud.com",
+      "branch": "/main/AK",
+      "comment": "ak ki tir des coeurs"
+    },
+    {
+      "id": 758,
+      "date": "09/12/2025 17:09:37",
+      "author": "abbonato12@icloud.com",
+      "branch": "/main/AK",
+      "comment": "tire avec bounding boxes et son"
+    },
+    {
+      "id": 760,
+      "date": "16/12/2025 13:40:50",
+      "author": "gwendolyne.b89@gmail.com",
+      "branch": "/main",
+      "comment": "add scene voice commande"
+    },
+    {
+      "id": 761,
+      "date": "16/12/2025 15:07:41",
+      "author": "gwendolyne.b89@gmail.com",
+      "branch": "/main",
+      "comment": "add scene + fix voice command"
+    },
+    {
+      "id": 762,
+      "date": "16/12/2025 15:18:47",
+      "author": "gwendolyne.b89@gmail.com",
+      "branch": "/main",
+      "comment": "last fix voice detection"
+    },
+    {
+      "id": 1736,
+      "date": "02/01/2026 17:58:10",
+      "author": "dragostgames@gmail.com",
+      "branch": "/main",
+      "comment": ""
+    },
+    {
+      "id": 1737,
+      "date": "02/01/2026 18:09:11",
+      "author": "dragostgames@gmail.com",
+      "branch": "/main",
+      "comment": "Ajout EventGrab pour lancepierre"
+    },
+    {
+      "id": 1738,
+      "date": "02/01/2026 21:35:00",
+      "author": "dragostgames@gmail.com",
+      "branch": "/main",
+      "comment": "Fonctionnement OK mais manque d'optimisation"
+    },
+    {
+      "id": 1739,
+      "date": "02/01/2026 22:01:46",
+      "author": "dragostgames@gmail.com",
+      "branch": "/main",
+      "comment": "optimisations mineurs"
+    },
+    {
+      "id": 1740,
+      "date": "05/01/2026 17:34:28",
+      "author": "abbonato12@icloud.com",
+      "branch": "/main/AK",
+      "comment": "reload"
+    },
+    {
+      "id": 1747,
+      "date": "05/01/2026 18:08:40",
+      "author": "marill.matice@gmail.com",
+      "branch": "/main/secretroom",
+      "comment": "alabien"
+    },
+    {
+      "id": 1748,
+      "date": "05/01/2026 19:35:44",
+      "author": "marill.matice@gmail.com",
+      "branch": "/main/secretroom",
+      "comment": "alabien2"
+    },
+    {
+      "id": 1749,
+      "date": "06/01/2026 13:41:56",
+      "author": "abbonato12@icloud.com",
+      "branch": "/main/AK",
+      "comment": "reload"
+    },
+    {
+      "id": 1750,
+      "date": "06/01/2026 14:23:25",
+      "author": "abbonato12@icloud.com",
+      "branch": "/main",
+      "comment": "merge"
+    },
+    {
+      "id": 1756,
+      "date": "06/01/2026 14:38:44",
+      "author": "abbonato12@icloud.com",
+      "branch": "/main",
+      "comment": "rename"
+    }
+  ]
+}
