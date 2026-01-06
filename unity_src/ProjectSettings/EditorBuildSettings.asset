@@ -4,12 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/SampleScene 1.unity
+    guid: dcc1c926e622c8f4e94b83f2003cfe1d
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e0bc386fc5a61d542ba64e329a7a72a0, type: 2}
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
-    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 0dcef46676b756744be398c1975132e5, type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 398bd252c42c798439d0524658800864, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 287c2077f7554c24b95abe10aca2c934, type: 2}
-    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 1b6898f1b35540d469a8c53a08417dd5, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 64cfef537a5f37b4199c3277436ce111, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 26b4ce56edead3643b22b14d0ae66119, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 096b04a711f5de549b27d5d0762d723b, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 88135964034267a42ab86fc0d8a9696b, type: 2}
   m_UseUCBPForAssetBundles: 0
