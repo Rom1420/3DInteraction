@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-01-06T14:55:13.164167Z",
+  "generated_at": "2026-01-12T16:47:52.012741Z",
   "from_changeset_id_exclusive": 1758,
-  "count": 23,
+  "count": 24,
   "changesets": [
     {
       "id": 5,
@@ -163,6 +163,13 @@
       "author": "dragostgames@gmail.com",
       "branch": "/main",
       "comment": "Finalisation Lance-Pierre + Ajout tour de canette - manque plus qu'a l'intégrer dans la scène finale."
+    },
+    {
+      "id": 1767,
+      "date": "06/01/2026 17:41:10",
+      "author": "marill.matice@gmail.com",
+      "branch": "/main/secretroom",
+      "comment": "materials"
     }
   ]
 }
