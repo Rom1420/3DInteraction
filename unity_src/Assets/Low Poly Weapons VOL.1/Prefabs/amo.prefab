@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4788199789074165800}
   - component: {fileID: 3876773551573738365}
   - component: {fileID: -1389508004116221424}
+  - component: {fileID: 3088186473261670416}
   m_Layer: 0
   m_Name: amo
   m_TagString: Ammo
@@ -107,7 +108,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -137,11 +138,26 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3088186473261670416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280421571970509258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1195457c7c1e4a459c4e2d81e298aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletImpact
+  gravityAfterHit: 1
+  dampOnHit: 0.25
+  destroyAfterHitSeconds: 3
 --- !u!1001 &6903021987543843606
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -51,6 +51,7 @@
     <Compile Include="Assets\Scripts\GazeRay.cs" />
     <Compile Include="Assets\Scripts\MagazineSocket.cs" />
     <Compile Include="Assets\Scripts\OculusGrabHeldSync.cs" />
+    <Compile Include="Assets\Scripts\BulletImpact.cs" />
     <Compile Include="Assets\Scripts\MagSocketSnapTrigger.cs" />
     <Compile Include="Assets\Scripts\Slingshot\SlingshotBand.cs" />
     <Compile Include="Assets\Scripts\Slingshot\SlingshotGrabEvents.cs" />

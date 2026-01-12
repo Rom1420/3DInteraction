@@ -14,6 +14,15 @@ public class HandGunShooter : MonoBehaviour
     [Tooltip("Source audio pour le son de tir.")]
     public AudioSource shootAudio;
 
+    [Tooltip("Clip du son de tir (wav/ogg).")]
+    public AudioClip shootClip;
+
+    [Range(0f, 1f)]
+    public float shootVolume = 0.9f;
+
+    [Tooltip("Variation de pitch pour éviter l'effet copier-coller.")]
+    public Vector2 pitchRange = new Vector2(0.97f, 1.03f);
+
     [Header("Paramètres de tir")]
     public float bulletSpeed = 30f;
 
@@ -42,7 +51,6 @@ public class HandGunShooter : MonoBehaviour
         if (!hasMagazine)
         {
             Debug.Log("[HandGunShooter] Tir bloqué : pas de chargeur");
-            // tu peux jouer un son "clic" ici si tu veux
             return;
         }
 
@@ -82,8 +90,18 @@ public class HandGunShooter : MonoBehaviour
         rb.linearVelocity = muzzle.forward * bulletSpeed;
         Debug.Log($"[HandGunShooter] velocity appliquée : {rb.linearVelocity}");
 
-        if (shootAudio != null)
-            shootAudio.Play();
+        // ✅ Audio: superposition + variation légère
+        if (shootAudio != null && shootClip != null)
+        {
+            shootAudio.pitch = Random.Range(pitchRange.x, pitchRange.y);
+            shootAudio.PlayOneShot(shootClip, shootVolume);
+        }
+        else if (shootAudio != null && shootAudio.clip != null)
+        {
+            // fallback si tu préfères utiliser AudioSource.clip dans l'inspector
+            shootAudio.pitch = Random.Range(pitchRange.x, pitchRange.y);
+            shootAudio.PlayOneShot(shootAudio.clip, shootVolume);
+        }
 
         Destroy(bullet, 5f);
     }
